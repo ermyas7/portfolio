@@ -1,0 +1,98 @@
+.header{
+    height: 100vh;
+    background: linear-gradient(to right, #fff 70%, #4830E6 30%);
+    padding: 2.5rem;
+}
+
+
+///////////////////////////////////////// 
+//////// MENU ///////////////////////////
+//////////////////////////////////////// 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-name{
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: 'Inconsolata', monospace;
+        color: #000026;
+        cursor: pointer;
+
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 5rem;
+            height: 2.5px;
+            background-color: #000026;
+            margin-left: .5rem;
+            transition: all .3s;
+        }
+
+        &:hover::after{
+
+            width: 7rem;
+            height: 1.5px;
+            background-color: #4830E6;
+        }
+    }
+
+    &-icon{
+
+        input{
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &-bar{
+            position: relative;
+            width: 2rem;
+
+            &, &::before, &::after{
+            background-color: #fff;
+            display: inline-block;
+            height: 1.5px;
+            border-radius: 2px;
+            transition: all .3s;
+        }
+
+        &::before{
+            content: '';
+            width: 1rem;
+            position: absolute;
+            top: .5rem;
+            left: 1rem;
+        }
+
+        &::after{
+            content: '';
+            width: 1.5rem;
+            position: absolute;
+            top: 1rem;
+            left: .5rem;
+        }
+    }
+
+    input:checked + label &-bar{
+        transform: rotate(45deg);
+        transform-origin: center;
+
+        &::before{
+            width: 0;
+            height: 0;
+        }
+
+        &::after{
+            width: 2rem;
+            transform: rotate(90deg);
+            transform-origin: center;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    }
+}
