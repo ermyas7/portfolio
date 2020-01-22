@@ -96,3 +96,102 @@
 
     }
 }
+
+
+/////////////////////////////////////////////// 
+///////////////// profile description ////////// 
+
+.home{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 2.5rem);
+
+    &-contact{
+        list-style: none;
+        margin-right: 10%;
+        border: .5px #4830E6 solid;
+        border-radius: 3rem;
+        box-shadow: 0 2rem 4rem rgba(#000, .1);
+        padding: 1.5rem;
+
+        &>*:not(:last-child){
+            margin-bottom: 4rem;
+        }
+
+        &-item{
+            writing-mode: vertical-rl;
+            font-family: 'Inconsolata', monospace;
+            color: #000026;
+            font-size: 2.0rem;
+            width: 2.5rem;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+
+            a{
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-profile{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img{
+            margin-right: 10%;
+            height: 70vh;
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+
+    &-description{
+        margin-right: 10%;
+
+        &-text{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    &-heading{
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 400;
+        font-family: 'Inconsolata', monospace;
+        color: #000026;
+        letter-spacing: 2px;
+
+    }
+
+    &-scroll{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-family: 'Inconsolata', monospace;
+        color: #000026;
+        cursor: pointer;
+
+        span{
+
+        }
+
+        i{
+            margin-left: .5rem;
+        }
+    }
+}
