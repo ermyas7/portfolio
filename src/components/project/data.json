@@ -24,13 +24,13 @@
         "link": "https://ermyas7.github.io/"
       },
       {
-        "title": "ethiotour",
+        "title": "bonifire",
         "techs": [
           {
             "name": "front-end",
-            "value": "HTML, Scss, Flexbox"
+            "value": "HTML, Scss, React.js"
           }
         ],
-        "link": "https://ethiotour.herokuapp.com/"
+        "link": "https://go-bonifire.herokuapp.com/"
       }
   ]
