@@ -58,6 +58,10 @@
             border: none;
             outline: none;
             border-bottom: 1px $color-grey-dark-1 solid;
+            
+            &:focus{
+                border-bottom: 1px $color-primary solid;
+            }
         }
 
         &-message{
@@ -70,6 +74,10 @@
                 border: none;
                 outline: none;
                 border-bottom: 1px $color-grey-dark-1 solid;
+
+                &:focus{
+                    border-bottom: 1px $color-primary solid;
+                }
             }
         }
     }

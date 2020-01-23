@@ -3,6 +3,7 @@ import Header from '../../components/header';
 import Project from '../../components/project';
 import Testimony from '../../components/testimony';
 import Contact from '../../components/contact';
+import Footer from '../../components/footer';
 
 const index = () => {
     return (
@@ -11,6 +12,7 @@ const index = () => {
             <Project/>
             <Testimony/>
             <Contact/>
+            <Footer/>
         </Fragment>
     )
 }
