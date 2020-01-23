@@ -17,7 +17,7 @@ function Home() {
                     </a>
                 </li>
                 <li className="home-contact-item">
-                <a href="https://www.linkedin.com/in/ermyas/" target="blank">
+                <a href="https://github.com/ermyas7" target="blank">
                         <img src={github} alt="github icon"/>
                     </a>
                 </li>
