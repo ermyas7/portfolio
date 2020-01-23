@@ -1,0 +1,88 @@
+@import '../../assets/sass/main';
+
+/////////////////////////////////////////////////////////// 
+////////////////// testimony section ////////////////////// 
+
+.testimony{
+    padding: 4rem 15%;
+    width: 100%;
+    background-color: $color-white;
+    //clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title{
+        align-self: flex-end;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    &-hr{
+        width: 10rem;
+        height: 2px;
+        background-color: $color-primary;
+        margin-right: 2rem;
+    }
+
+    &-heading{
+
+    }
+
+    &-cards{
+       position: relative;
+       display: flex;
+
+       &>*:not(:last-child){
+           margin-right: 1rem;
+       }
+    }
+
+    &-change{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+
+        i{
+            font-size: 2.0rem;
+            color: $color-grey-dark-1;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    }
+
+    &-card{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-card-img{
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1.5rem;
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &-card-credentials{
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.7rem;
+    }
+
+    &-card-text{
+        margin-top: .5rem;
+    }
+}

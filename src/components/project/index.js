@@ -4,16 +4,15 @@ import data from './data.json';
 import Card from './Card';
 
 const index = () => {
-    console.log(data);
     const cards = data.map((card, ind) => (
-        <Card card={card} ind={ind}/>
+        <Card card={card} ind={ind} key={ind}/>
     ))
   return (
     <div className="project" id="project">
       <div className="project-container">
         <div className="project-title">
           <span className="project-hr"></span>
-          <h2 className="project-heading">Latest Work</h2>
+          <h1 className="project-heading heading-primary">Latest Work</h1>
         </div>
         <div className="project-list">
 

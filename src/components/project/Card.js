@@ -13,7 +13,7 @@ const Card = ({card, ind}) => {
           <ul className="project-card-description">
             {
             card.techs.map((tech, id) => (
-                <li className="project-card-description__item">
+                <li className="project-card-description__item" key={id}>
                 <span className="project-card-description__item-title">
                   {tech.name} --
                 </span>
