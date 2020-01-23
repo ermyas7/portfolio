@@ -47,10 +47,12 @@ function Home() {
                     Hi, my name is Ermyas Fekadu and I'm a freelance web developer based in India. I have over 3 years of experience in the software development industry. I'm specialized in Front-end Development. You can check out my work below.
                     </p>
                     <div className="home-scroll">
+                        <a href="#project">
                         <span>
                         scroll down    
                         </span>
                         <i className="fas fa-long-arrow-alt-down"></i>
+                        </a>
                     </div>
                 </div>
 

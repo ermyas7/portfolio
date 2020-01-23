@@ -45,7 +45,6 @@
         margin-bottom: 2.5rem;
 
         &-item{
-            background-color: $color-white;
             position: relative;    
         }
     }
@@ -64,6 +63,7 @@
         font-family: 'Inconsolata', monospace;
         backface-visibility: hidden;
         overflow: hidden;
+        cursor: pointer;
         transition: all .8s ease;
 
         &__front{

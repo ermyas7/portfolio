@@ -9,7 +9,7 @@ const index = () => {
         <Card card={card} ind={ind}/>
     ))
   return (
-    <div className="project">
+    <div className="project" id="project">
       <div className="project-container">
         <div className="project-title">
           <span className="project-hr"></span>
