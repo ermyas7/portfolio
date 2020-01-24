@@ -11,6 +11,22 @@ const Menu = () => {
                     <span className="menu-icon-bar">
                     </span>
                 </label>
+                <div className="menu-side">
+                    <ul className="menu-side-item">
+                        <li className="menu-side-list">
+                            Home
+                        </li>
+                        <li className="menu-side-list">
+                            About
+                        </li>
+                        <li className="menu-side-list">
+                            Project
+                        </li>
+                        <li className="menu-side-list">
+                            Contact
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

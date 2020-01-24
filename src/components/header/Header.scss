@@ -43,16 +43,20 @@
         }
     }
 
+    ///////////////////////////////////
+    ////// toggle  icon //////////////
     &-icon{
-
+        position: relative;
         input{
             visibility: hidden;
             opacity: 0;
+            z-index: 10;
         }
 
         &-bar{
             position: relative;
             width: 2rem;
+            z-index: 10;
 
             &, &::before, &::after{
             background-color: #fff;
@@ -98,7 +102,47 @@
     }
 
     }
+
+    ///////////////////////////////
+    ////// right side menu //////
+    &-side{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        opacity: 0;
+        height: 100vh;
+        background-image: linear-gradient(to left, $color-primary-light, $color-primary-dark);
+        z-index: 5;
+        padding-top: 10rem;
+        padding-left: 3rem;
+        font-family: 'Inconsolata', monospace;
+        transition: all .3s;
+
+        &-item{
+            list-style: none;
+        }
+
+        &-list{
+            color: $color-white;
+            margin-bottom: .5rem;
+            cursor: pointer;
+            transition: all .3s;
+            text-transform: uppercase;
+
+            &:active, &:hover{
+                color: $color-grey-light-1;
+            }
+        }
+    }
 }
+
+ /////////////////////////////////
+    ////////// show side menu /////
+    .menu-icon input:checked ~ .menu-side{
+        opacity: 1;
+        width: 40%;
+    }
 
 
 /////////////////////////////////////////////// 
