@@ -14,7 +14,6 @@ const index = () => {
             <Project data={val} title="Latest work" all={false}/>
             <Testimony/>
             <Contact/>
-            <Footer/>
         </Fragment>
     )
 }
