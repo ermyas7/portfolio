@@ -8,7 +8,6 @@ import Home from './Home';
 const index = () => {
     return (
         <div className="header">
-            <Menu/>
             <Home/>
         </div>
     )

@@ -1,18 +1,19 @@
 import React from "react";
 import "./Project.scss";
-import data from './data.json';
 import Card from './Card';
 
-const index = () => {
+const index = ({data, title, all}) => {
     const cards = data.map((card, ind) => (
         <Card card={card} ind={ind} key={ind}/>
-    ))
+    ));
+
+    const btnStyle = all? {display: 'none'} : {display: 'block'};
   return (
     <div className="project" id="project">
       <div className="project-container">
         <div className="project-title">
           <span className="project-hr"></span>
-          <h1 className="project-heading heading-primary">Latest Work</h1>
+  <h1 className="project-heading heading-primary">{title}</h1>
         </div>
         <div className="project-list">
 
@@ -22,7 +23,7 @@ const index = () => {
           }  
 
         </div>
-        <div className="project-btn">
+        <div className="project-btn" style={btnStyle}>
           <button className="project-btn-icon btn btn-blue">
             See All Projects
           </button>

@@ -4,12 +4,14 @@ import Project from '../../components/project';
 import Testimony from '../../components/testimony';
 import Contact from '../../components/contact';
 import Footer from '../../components/footer';
+import data from '../projects/data.json';
 
 const index = () => {
+    const val = data.slice(3);
     return (
         <Fragment>
             <Header/>
-            <Project/>
+            <Project data={val} title="Latest work" all={false}/>
             <Testimony/>
             <Contact/>
             <Footer/>
