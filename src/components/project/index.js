@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.scss";
 import Card from './Card';
-
+import {Link} from 'react-router-dom';
 const index = ({data, title, all}) => {
     const cards = data.map((card, ind) => (
         <Card card={card} ind={ind} key={ind}/>
@@ -23,11 +23,11 @@ const index = ({data, title, all}) => {
           }  
 
         </div>
-        <div className="project-btn" style={btnStyle}>
+        <Link className="project-btn" style={btnStyle} to="/project">
           <button className="project-btn-icon btn btn-blue">
             See All Projects
           </button>
-        </div>
+        </Link>
       </div>
     </div>
   );
