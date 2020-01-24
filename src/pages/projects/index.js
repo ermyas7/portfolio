@@ -1,11 +1,11 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import data from './data.json';
 import Project from '../../components/project';
 const index = () => {
     return (
-        <Fragment>
+    <div style={{backgroundColor: '#E2E3E7'}}>
             <Project data={data} title={'Projects'} all={true}/>
-        </Fragment>
+        </div>
     )
 }
 
