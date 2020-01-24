@@ -7,7 +7,7 @@ import Home from './Home';
 
 const index = () => {
     return (
-        <div className="header">
+        <div className="header" id="home">
             <Home/>
         </div>
     )

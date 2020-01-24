@@ -1,7 +1,11 @@
 import React from 'react';
 import './Header.scss';
+import {Link} from 'react-router-dom';
 
 const Menu = () => {
+    const toggle = () => {
+        document.getElementById("menu").checked = false;
+    }
     return (
         <div className="menu">
             <h4 className="menu-name">Ermyas Fekadu</h4>
@@ -12,18 +16,18 @@ const Menu = () => {
                     </span>
                 </label>
                 <div className="menu-side">
-                    <ul className="menu-side-item">
+                    <ul className="menu-side-item" onClick={toggle}>
                         <li className="menu-side-list">
-                            Home
+                            <Link to="/">Home</Link>
                         </li>
                         <li className="menu-side-list">
-                            About
+                            <Link to="/project">Projects</Link>
                         </li>
                         <li className="menu-side-list">
-                            Project
+                            <Link to="/">About</Link>
                         </li>
                         <li className="menu-side-list">
-                            Contact
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>

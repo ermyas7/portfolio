@@ -3,7 +3,7 @@ import './Contact.scss';
 
 const index = () => {
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="contact-container">
                 <h2 className="contact-heading heading-secondary">
                 Got a project in mind? Drop me a line! Let's make something awesome together.

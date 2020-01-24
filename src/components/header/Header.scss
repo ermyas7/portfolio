@@ -125,10 +125,14 @@
             list-style: none;
         }
 
-        &-list{
+        &-list Link, &-list a{
+
             color: $color-white;
-            margin-bottom: .5rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
             cursor: pointer;
+            text-decoration: none;
             transition: all .3s;
             text-transform: uppercase;
 

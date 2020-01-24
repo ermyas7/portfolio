@@ -1,0 +1,70 @@
+[
+    {
+      "title": "3click",
+      "techs": [
+        {
+          "name": "front-end",
+          "value": "Vue.js, Css"
+        },
+        {
+          "name": "back-end and DB",
+          "value": "Laravel, Mysql"
+        }
+      ],
+      "link": "http://3click.se/"
+    },
+    {
+        "title": "The natour",
+        "techs": [
+          {
+            "name": "front-end",
+            "value": "HTML, Scss"
+          }
+        ],
+        "link": "https://ermyas7.github.io/"
+      },
+      {
+        "title": "bonifire",
+        "techs": [
+          {
+            "name": "front-end",
+            "value": "HTML, Scss, React.js"
+          }
+        ],
+        "link": "https://go-bonifire.herokuapp.com/"
+      },
+      {
+        "title": "ethitour",
+        "techs": [
+          {
+            "name": "front-end",
+            "value": "HTML, Scss, Flexbox"
+          }
+        ],
+        "link": "https://ethiotour.herokuapp.com/"
+      },
+      {
+        "title": "Vuebnb",
+        "techs": [
+          {
+            "name": "front-end",
+            "value": "HTML, Scss, Vue.js"
+          },
+          {
+            "name": "back-end and DB",
+            "value": "Node.js, Express.js, MongoDB"
+          }    
+        ],
+        "link": "https://hotel-listing.herokuapp.com/"
+      },
+      {
+        "title": "ermyas.io",
+        "techs": [
+          {
+            "name": "front-end",
+            "value": "HTML, Scss, React.js"
+          }
+        ],
+        "link": "http://ermyas-portfolio.herokuapp.com/"
+      }
+  ]
