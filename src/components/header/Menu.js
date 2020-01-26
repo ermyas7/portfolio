@@ -8,7 +8,11 @@ const Menu = () => {
     }
     return (
         <div className="menu">
-            <h4 className="menu-name">Ermyas Fekadu</h4>
+            <Link to="/">
+            <h4 className="menu-name">
+                Ermyas Fekadu
+            </h4>
+            </Link>
             <div className="menu-icon">
                 <input type="checkbox"  id="menu"/>
                 <label htmlFor="menu">

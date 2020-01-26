@@ -1,5 +1,20 @@
+@import './assets/sass/main';
+
 html{
   font-size: 62.5%; //1rem = 10px
+
+  @media screen and (max-width: $medium) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 50%;
+  }
+
+  @media screen and (min-width: $extra-large) {
+    font-size: 70%;
+  }
+
 }
 
 *, *::before, *::after{

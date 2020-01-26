@@ -18,3 +18,16 @@ $color-grey-dark-1: #4C4C65;
 
 
 $default-font-size: 1.4rem;
+
+/*
+0 - 600px phone
+600 - 900px tab-port
+900 - 1200px tab-land
+1200 - 1800px normal
+1800px + big-desktop
+*/
+//1rem = 16px
+$small: 37.5em;
+$medium: 56.25em;
+$large: 75em;
+$extra-large: 112.5em;

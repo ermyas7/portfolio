@@ -18,6 +18,10 @@
     background: linear-gradient(to right, $color-white 60%, $color-primary 40%);
     padding: 2.5rem;
 
+   a{
+        text-decoration: none;
+    }
+
     &-name{
         display: inline-flex;
         align-items: center;
