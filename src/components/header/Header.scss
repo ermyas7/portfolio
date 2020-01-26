@@ -2,9 +2,12 @@
 
 
 .header{
-    height: 100vh;
     background: linear-gradient(to right, $color-white 70%, $color-primary 30%);
     padding:0 2.5rem;
+
+    @media screen and (max-width: $small) {
+        background: linear-gradient(to right, $color-white 70%, $color-white 30%);
+      }
 }
 
 
@@ -15,8 +18,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, $color-white 60%, $color-primary 40%);
+    background: linear-gradient(to right, $color-white 55%, $color-primary 45%);
     padding: 2.5rem;
+
+    @media screen and (max-width: $medium) {
+         
+      }
+    
+      @media screen and (max-width: $small) {
+        
+      }
+    
+      @media screen and (min-width: $extra-large) {
+        
+      }
 
    a{
         text-decoration: none;
@@ -25,7 +40,7 @@
     &-name{
         display: inline-flex;
         align-items: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 400;
         font-family: 'Inconsolata', monospace;
         color: $color-grey-dark-1;
@@ -151,7 +166,7 @@
     ////////// show side menu /////
     .menu-icon input:checked ~ .menu-side{
         opacity: 1;
-        width: 40%;
+        width: 45%;
     }
 
 
@@ -161,18 +176,43 @@
 .home{
     display: flex;
     align-items: center;
-    height: calc(100vh - 2.5rem);
-
+    padding: 5rem 0;
     &-contact{
         list-style: none;
-        margin-right: 10%;
+        margin-right: 3%;
         border: .5px $color-primary solid;
         border-radius: 3rem;
         box-shadow: 0 3rem 6rem rgba($color-primary, .15);
         padding: 1.5rem;
 
+        @media screen and (max-width: $medium) {
+            padding: 1;
+            border-radius: 2.5rem;
+        }
+      
+        @media screen and (max-width: $small) {
+          
+        }
+
+        @media screen and (min-width: $extra-large) {
+            
+        }
+
         &>*:not(:last-child){
             margin-bottom: 4rem;
+
+            @media screen and (max-width: $medium) {
+                margin-bottom: 3rem;
+            }
+          
+            @media screen and (max-width: $small) {
+              
+            }
+    
+            @media screen and (min-width: $extra-large) {
+                
+            }
+    
         }
 
         &-item{
@@ -183,6 +223,19 @@
             width: 2.5rem;
             cursor: pointer;
             transition: all .3s;
+
+            @media screen and (max-width: $medium) {
+                width: 2.2rem;
+            }
+          
+            @media screen and (max-width: $small) {
+              
+            }
+    
+            @media screen and (min-width: $extra-large) {
+                
+            }
+    
 
             &:hover{
                 transform: scale(1.2);
@@ -198,40 +251,109 @@
     }
 
     &-profile{
-        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: $small) {
+           flex-direction: column;      
+        }
+
         &-img{
-            margin-right: 10%;
-            height: 70vh;
+            margin-right: 5%;
+            width: 35%;
+
+            @media screen and (max-width: $medium) {
+                width: 50%;
+            }
+          
+            @media screen and (max-width: $small) {
+              order: -1;
+              width: 10rem;
+              height: 10rem;
+              margin-right: 0;
+            }
+          
+            @media screen and (min-width: $extra-large) {
+                width: 30%;
+                margin-right: 5%;
+            }
 
             img{
-                height: 100%;
+                width: 100%;
+
+                @media screen and (max-width: $small) {
+                    height: 10rem;
+                    border-radius: 50%;
+                  }
             }
         }
     }
 
     &-description{
-        margin-right: 10%;
+        margin-right: 5%;
+        flex: 1;
+
+        @media screen and (max-width: $medium) {
+            
+        }
+      
+        @media screen and (max-width: $small) {
+          margin-right: 0;
+          margin-top: 2rem;
+        }
+      
+        @media screen and (min-width: $extra-large) {
+            margin-right: 15%;  
+        }
 
         &-text{
-            font-size: 1.5rem;
-            margin-top: 1rem;
+            font-size: 2rem;
             line-height: 1.6;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+            letter-spacing: 1.1px;
+
+            @media screen and (max-width: $medium) {
+                font-size: 1.8rem;
+            }
+          
+            @media screen and (max-width: $small) {
+              font-size: 1.3rem;
+            }
+
+            @media screen and (min-width: $extra-large) {
+                
+            }
         }
 
     }
 
+    &-headings{
+        @media screen and (max-width: $small) {
+            display: none;
+          }
+    }
+
     &-heading{
-        margin-bottom: 1rem;
-        font-size: 3rem;
+        margin-bottom: 2rem;
+        font-size: 4rem;
         font-weight: 400;
         font-family: 'Inconsolata', monospace;
         color: $color-grey-dark-1;
         letter-spacing: 2px;
+        
+        @media screen and (max-width: $medium) {
+            font-size: 3.6rem;
+        }
+      
+        @media screen and (max-width: $small) {
+          font-size: 1.6rem;
+        }
+        @media screen and (min-width: $extra-large) {
+            font-size: 4rem;  
+            margin-bottom: 2rem;
+        }
 
     }
 

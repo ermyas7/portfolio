@@ -34,15 +34,18 @@ function Home() {
             </ul>
             <div className="home-profile">
                 <div className="home-description">
-                    <h1 className="home-heading">
-                        Ermyas Fekadu ,
-                    </h1>
-                    <h1 className="home-heading">
-                        Freelance
-                    </h1>
-                    <h1 className="home-heading">
-                    Full Stack JavaScript Developer
-                    </h1>
+                    <div className="home-headings">
+                        <h1 className="home-heading">
+                            Ermyas Fekadu ,
+                        </h1>
+                        <h1 className="home-heading">
+                            Freelance
+                        </h1>
+                        <h1 className="home-heading">
+                        Full Stack JavaScript Developer
+                        </h1>
+                    </div>
+
                     <p className="home-description-text">
                     Hi, my name is Ermyas Fekadu and I'm a freelance web developer based in India. I have over 3 years of experience in the software development industry. I'm specialized in Front-end Development. You can check out my work below.
                     </p>
