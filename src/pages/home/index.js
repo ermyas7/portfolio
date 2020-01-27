@@ -7,7 +7,7 @@ import Footer from '../../components/footer';
 import data from '../projects/data.json';
 
 const index = () => {
-    const val = data.slice(3);
+    const val = data.slice(0, 3);
     return (
         <Fragment>
             <Header/>
