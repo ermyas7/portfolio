@@ -15,11 +15,35 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: $medium) {
+        padding: 3rem 10%;
+   }
+ 
+   @media screen and (max-width: $small) {
+    padding: 2rem 5%; 
+   }
+ 
+   @media screen and (min-width: $extra-large) {
+       padding: 6rem 20%;
+   }
+
     &-title{
         align-self: flex-end;
         display: inline-flex;
         align-items: center;
         margin-bottom: 3rem;
+
+        @media screen and (max-width: $medium) {
+            margin-bottom: 2rem;
+       }
+     
+       @media screen and (max-width: $small) {
+        margin-bottom: 1.5rem;
+       }
+     
+       @media screen and (min-width: $extra-large) {
+        margin-bottom: 3rem;
+       }
     }
 
     &-hr{
@@ -27,6 +51,18 @@
         height: 2px;
         background-color: $color-primary;
         margin-right: 2rem;
+
+         @media screen and (max-width: $medium) {
+            margin-right: 1rem;
+       }
+     
+       @media screen and (max-width: $small) {
+        margin-right: .5rem;
+       }
+     
+       @media screen and (min-width: $extra-large) {
+        margin-right: 3rem;
+       }
     }
 
     &-heading{
@@ -39,6 +75,16 @@
 
        &>*:not(:last-child){
            margin-right: 1rem;
+       }
+
+       @media screen and (max-width: $small) {
+        flex-direction: column;
+        margin-top: 1rem;
+
+        &>*:not(:last-child){
+            margin-bottom: 1rem;
+            margin-right: 0;
+        }
        }
     }
 
@@ -65,6 +111,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: $small) {
+            width: 100%;
+            padding: 0 5rem;
+           }
     }
 
     &-card-img{
@@ -80,6 +131,18 @@
     &-card-credentials{
         font-family: 'Inconsolata', monospace;
         font-size: 1.7rem;
+
+        @media screen and (max-width: $medium) {
+            font-size: 1.6rem;
+       }
+     
+       @media screen and (max-width: $small) {
+        font-size: 1.4rem;
+       }
+     
+       @media screen and (min-width: $extra-large) {
+        font-size: 1.9rem;
+       }
     }
 
     &-card-text{
