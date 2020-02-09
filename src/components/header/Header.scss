@@ -270,7 +270,7 @@
             @media screen and (max-width: $small) {
               order: -1;
               width: 10rem;
-              height: 10rem;
+            //   height: 10rem;
               margin-right: 0;
             }
           
@@ -283,8 +283,8 @@
                 width: 100%;
 
                 @media screen and (max-width: $small) {
-                    height: 10rem;
-                    border-radius: 50%;
+                    width: 100%;
+                    border-radius: 1rem;
                   }
             }
         }
