@@ -2,7 +2,7 @@
 
 
 .header{
-    background: linear-gradient(to right, $color-white 70%, $color-primary 30%);
+    background-image: linear-gradient(to right, $color-white 70%, $color-primary 30%);
     padding:0 2.5rem;
 
     @media screen and (max-width: $small) {
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, $color-white 55%, $color-primary 45%);
+    background: linear-gradient(to right, $color-white 70%, $color-primary 30%);
     padding: 2.5rem;
 
     @media screen and (max-width: $medium) {
