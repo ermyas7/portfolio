@@ -357,12 +357,15 @@
 
     }
 
-    &-scroll{
+    &-scroll a{
         display: flex;
         align-items: center;
         font-weight: 400;
         font-family: 'Inconsolata', monospace;
-        color: $color-grey-dark-1;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        color: $color-black;
         cursor: pointer;
 
         span{
@@ -371,6 +374,7 @@
 
         i{
             margin-left: .5rem;
+            font-size: 1.8rem;
         }
     }
 }

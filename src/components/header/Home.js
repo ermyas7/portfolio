@@ -47,7 +47,7 @@ function Home() {
                     </div>
 
                     <p className="home-description-text">
-                    Hi, my name is Ermyas Fekadu and I'm a freelance web developer based in India. I have over 3 years of experience in the software development industry. I'm specialized in Front-end Development. You can check out my work below.
+                    Hi, my name is Ermyas Fekadu and I'm a freelance web developer based in India. I have over 3 years of experience in software development industry. I'm specialized in Front-end Development. You can check out my work below.
                     </p>
                     <div className="home-scroll">
                         <a href="#project">
