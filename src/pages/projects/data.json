@@ -1,19 +1,5 @@
 [
     {
-      "title": "3click",
-      "techs": [
-        {
-          "name": "front-end",
-          "value": "Vue.js, Css"
-        },
-        {
-          "name": "back-end and DB",
-          "value": "Laravel, Mysql"
-        }
-      ],
-      "link": "http://3click.se/"
-    },
-    {
         "title": "The natour",
         "techs": [
           {
