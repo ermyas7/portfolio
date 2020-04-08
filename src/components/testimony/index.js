@@ -1,5 +1,10 @@
 import React from 'react';
 import './Testimony.scss';
+
+import review1 from "../../assets/images/testimony-1.jpg";
+import review2 from "../../assets/images/testimony-2.jpg";
+import review3 from "../../assets/images/testimony-3.jpg";
+
 const index = () => {
     const slider = (evt) => {
         console.log(evt);
@@ -19,7 +24,7 @@ const index = () => {
                 </div> */}
                 <div className="testimony-card">
                     <div className="testimony-card-img">
-                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQHLn-bca-wWTA/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=GhoOMgFkTB4wwHBVcl6r6vf8paWCAb-LQk3PZUPLVL8" alt="user"/>
+                        <img src={review1} alt="user"/>
                     </div>
                     <h4 className="testimony-card-credentials">
                     Manuj Gupta
@@ -28,12 +33,12 @@ const index = () => {
                     CEO, Orane Consulting, India
                     </h4>
                     <p className="testimony-card-text">
-                    I must say his ability to understand design requirements and delivery of application front end are reliable and professional.
+                    I must say Ermyas's ability to understand design requirements and delivery of application front end are reliable and professional.
                     </p>
                 </div>
                 <div className="testimony-card">
                     <div className="testimony-card-img">
-                        <img src="https://cdn2.f-cdn.com/ppic/117525845/logo/27585662/dtu4B/profile_logo_.jpg" alt="user"/>
+                        <img src={review2} alt="user"/>
                     </div>
                     <h4 className="testimony-card-credentials">
                     Mattias
@@ -42,13 +47,13 @@ const index = () => {
                     Entrepreneur, Sweden
                     </h4>
                     <p className="testimony-card-text">
-                    Worked several times, and still working together. Very loyal and talented.
+                    I Worked with Ermyas several times, he is very loyal and talented.
                     </p>
                 </div>
 
                 <div className="testimony-card">
                     <div className="testimony-card-img">
-                        <img src="https://cdn5.f-cdn.com/ppic/70886978/logo/11068330/YWFve/profile_logo_.JPG" alt="user"/>
+                        <img src={review3} alt="user"/>
                     </div>
                     <h4 className="testimony-card-credentials">
                     Norlyn
