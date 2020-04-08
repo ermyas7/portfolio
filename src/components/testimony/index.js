@@ -1,4 +1,6 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
 import './Testimony.scss';
 
 import review1 from "../../assets/images/testimony-1.jpg";
@@ -11,6 +13,13 @@ const index = () => {
     }
     return (
         <div className="testimony">
+            {/* <Helmet>
+                <title>Ermyas Fekadu Reviews | Testimony from client</title>
+                <meta
+                    name="description"
+                    content="See Ermyas's testimony and review from his freelancing clients for software development"
+                />
+            </Helmet> */}
             <div className="testimony-title">
                 <span className="testimony-hr"></span>
                 <h1 className="testimony-heading heading-primary">
